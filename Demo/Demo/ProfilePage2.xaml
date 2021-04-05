@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Demo.ProfilePage2"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    BackgroundColor="White"
+    NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <Grid
+            ColumnDefinitions="*,*"
+            ColumnSpacing="0"
+            RowDefinitions="Auto,Auto,Auto"
+            RowSpacing="0">
+
+            <Frame BackgroundColor="Yellow" HasShadow="False" />
+            <Frame
+                Grid.Row="1"
+                BackgroundColor="Blue"
+                HasShadow="False" />
+
+            <Frame
+                Grid.Row="2"
+                Grid.RowSpan="2"
+                Grid.ColumnSpan="2"
+                BackgroundColor="Red"
+                HasShadow="False" />
+            <Frame
+                Grid.Column="1"
+                BackgroundColor="Green"
+                HasShadow="False" />
+            <Frame
+                Grid.Row="1"
+                Grid.Column="1"
+                BackgroundColor="Gray"
+                HasShadow="False" />
+            <Frame
+                Grid.Row="2"
+                Grid.Column="1"
+                BackgroundColor="Purple"
+                HasShadow="False" />
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

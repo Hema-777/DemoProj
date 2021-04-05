@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Demo.StartingPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:abc="http://xamarin.com/schemas/2020/toolkit"
+    NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <Grid>
+            <Image Aspect="AspectFill" Source="shoppingbag.jpg" />
+            <BoxView
+                BackgroundColor="Black"
+                HorizontalOptions="FillAndExpand"
+                Opacity="0.7"
+                VerticalOptions="FillAndExpand" />
+            <StackLayout>
+                <Label
+                    Margin="0,80,0,10"
+                    FontSize="20"
+                    HorizontalOptions="Center"
+                    Text="Sign in"
+                    TextColor="White"
+                    VerticalOptions="Center" />
+                <Frame
+                    Margin="10,0,10,10"
+                    Padding="0"
+                    BackgroundColor="Transparent"
+                    BorderColor="White"
+                    CornerRadius="5"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="Center">
+                    <Entry
+                        Margin="5,0,0,0"
+                        Keyboard="Email"
+                        Placeholder="Email ID">
+                        <Entry.Effects>
+                            <abc:RemoveBorderEffect />
+                        </Entry.Effects>
+                    </Entry>
+                </Frame>
+                <Frame
+                    Margin="10,0,10,10"
+                    Padding="0"
+                    BackgroundColor="Transparent"
+                    BorderColor="White"
+                    CornerRadius="5"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="Center">
+                    <Entry
+                        Margin="5,0,0,0"
+                        IsPassword="True"
+                        Placeholder="Password">
+                        <Entry.Effects>
+                            <abc:RemoveBorderEffect />
+                        </Entry.Effects>
+                    </Entry>
+                </Frame>
+                <!--<Label/>-->
+                <Button
+                    Margin="10,0"
+                    BackgroundColor="Gray"
+                    Clicked="Button_Clicked"
+                    Text="Submit" />
+                <StackLayout
+                    Margin="0,50,0,0"
+                    HorizontalOptions="Center"
+                    Orientation="Horizontal"
+                    Spacing="40">
+                    <ImageButton
+                        Padding="5"
+                        BackgroundColor="White"
+                        Clicked="ImageButton_Clicked"
+                        CornerRadius="100"
+                        HeightRequest="50"
+                        HorizontalOptions="Center"
+                        Source="facebook.png"
+                        VerticalOptions="Center"
+                        WidthRequest="50" />
+                    <ImageButton
+                        Padding="5"
+                        BackgroundColor="White"
+                        CornerRadius="100"
+                        HeightRequest="50"
+                        HorizontalOptions="Center"
+                        Source="facebook.png"
+                        VerticalOptions="Center"
+                        WidthRequest="50" />
+                </StackLayout>
+            </StackLayout>
+        </Grid>
+
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Demo.ProfilePage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    BackgroundColor="White"
+    NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <Grid
+            ColumnDefinitions="*,*,*"
+            RowDefinitions="Auto,Auto,Auto,Auto,*"
+            RowSpacing="0"
+            VerticalOptions="FillAndExpand">
+
+            <Image
+                Grid.Row="0"
+                Grid.RowSpan="4"
+                Grid.ColumnSpan="3"
+                Aspect="AspectFill"
+                HeightRequest="336"
+                Source="User.png" />
+            <ImageButton
+                Grid.Row="0"
+                Margin="28,28,0,0"
+                Aspect="AspectFill"
+                BackgroundColor="Transparent"
+                Clicked="ImageButton_Clicked"
+                HeightRequest="14"
+                HorizontalOptions="Start"
+                Source="BackIcon.png"
+                VerticalOptions="Center"
+                WidthRequest="17" />
+            <Label
+                Grid.Row="2"
+                Margin="0,0,0,12"
+                HorizontalOptions="Center"
+                Text="135 &#10; Posts"
+                TextColor="White"
+                VerticalOptions="End" />
+            <Label
+                Grid.Row="2"
+                Grid.Column="1"
+                Margin="0,0,0,12"
+                HorizontalOptions="Center"
+                Text="135 &#10; Posts"
+                TextColor="White"
+                VerticalOptions="End" />
+            <Label
+                Grid.Row="2"
+                Grid.Column="2"
+                Margin="0,0,0,12"
+                HorizontalOptions="Center"
+                Text="135 &#10; Posts"
+                TextColor="White"
+                VerticalOptions="End" />
+            <BoxView
+                Grid.Row="3"
+                Grid.ColumnSpan="3"
+                BackgroundColor="White"
+                CornerRadius="20,20,0,0"
+                HeightRequest="20" />
+            <Frame
+                Grid.Row="4"
+                Grid.RowSpan="2"
+                Grid.ColumnSpan="3"
+                BackgroundColor="White"
+                CornerRadius="20"
+                VerticalOptions="FillAndExpand">
+                <Grid RowDefinitions="Auto,Auto">
+                    <Label Grid.Row="0">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="blah" TextColor="Yellow" />
+                                <Span Text="blah" TextColor="Pink" />
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <Label Grid.Row="1">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="blah" TextColor="Yellow" />
+                                <Span Text="blah" TextColor="Pink" />
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                </Grid>
+
+            </Frame>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
